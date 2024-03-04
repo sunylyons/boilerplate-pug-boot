@@ -1,0 +1,40 @@
+// 
+// Contact
+// 
+
+.signup-section {
+    background: linear-gradient(to bottom,
+        #{fade-out($black, 0.9)} 0%,
+        #{fade-out($black, 0.5)} 75%,
+        $black 100%),
+    url("../assets/img/crosstrek1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
+    .form-signup {
+        input {
+            box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+            padding: 1.25rem 2rem;
+            height: auto;
+            font-family: $font-family-special;
+            font-size: 80%;
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+            border: 0;
+        }
+    }
+}
+
+@media all and (min-width: 1025px){
+    .signup-section {
+        padding: 30rem 0;
+    }
+}
+
+@media all and (max-width: 1024px){
+    .signup-section {
+        padding: 15rem 0;
+    }
+}

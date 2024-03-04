@@ -1,0 +1,50 @@
+// 
+// Styles
+// 
+
+// Import variables
+@import "./variables.scss";
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+// Global CSS
+@import "./global.scss";
+
+// Components
+@import "./components/navbar.scss";
+@import "./components/buttons.scss";
+
+// Sections
+@import "./sections/masthead.scss";
+@import "./sections/about.scss";
+@import "./sections/projects.scss";
+@import "./sections/signup.scss";
+@import "./sections/contact.scss";
+@import "./sections/footer.scss";
+
+@media all and (min-width: 1025px){
+    .img-fluid {
+        max-height: 600px;
+        object-fit: cover;
+    }
+    .gx-0 {
+        max-height: 600px;
+    }
+}
+
+@media all and (max-width: 1024px){
+    .img-fluid {
+        width: 100%;
+        max-height: 350px;
+        object-fit: cover;
+    }
+}
+
+.button-text {
+    padding-left: 10px;
+}
+
+.rating {
+    font-size: 14px;
+}
